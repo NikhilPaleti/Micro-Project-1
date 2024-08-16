@@ -1,0 +1,136 @@
+/* My CSS format - 
+    dimensions/structure 
+    ////////
+    appearance
+    ///////
+    text
+*/
+
+@font-face {
+    font-family: "Custom_Inter";
+    src: url("assets/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+}
+
+a{
+    color: white;   
+    text-decoration: none;
+}
+html, body { margin: 0; padding: 0; }
+
+#main{
+    display: flex;
+    justify-content: space-between;
+    padding: 10vh 12vw 8vh 12vw;
+    
+    background-color:#FFCD9E;
+    
+    font-family:'Custom_Inter';
+    
+}
+#main-left{
+    width: 50%;
+}
+#main-left h1 {
+    margin: 0;
+
+    font-size: 3rem;
+}
+#main-left p {
+    margin-top: 2rem;
+
+    font-size: 1.5rem;
+}
+#main-left b {
+    display: block;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+
+    font-size: 1.5rem;
+}
+#main-left #p2{
+    margin-left: 15%;
+    margin-top: 0.5rem;
+
+    color: white;
+    
+    font-size: 1rem;
+}
+#main-right{
+    width: 35%;
+
+    text-align: center;
+}
+#mail-input{
+    height: 2rem;
+    width: 60%;
+    padding: 0.3rem;
+    padding-left: 1rem;
+    margin-right: 2%;
+    
+    border-radius: 0.5rem;
+    border: 0.2rem solid black;
+    background-color: white;
+    
+    font-size: 1.2rem;
+}
+#register-button{
+    height: 3rem;
+    width: 25%;
+    padding: 0.3rem;
+    margin: 0;
+    
+    
+    border-radius: 0.5rem; 
+    border: 0;
+    background-color: #282828;
+    color: white;
+    
+    font-size: 1.2rem;
+}
+
+
+#footer{
+    display: flex;
+    padding: 9vh 12vw 5vh 12vw;
+
+    background: #282828;
+    
+    font-family:'Custom_Inter';
+    color: white;
+}
+#foot-left{
+    width: 50%;
+    
+}
+#foot-right{
+    width: 50%;
+
+    text-align: right;
+}
+#foot-left a {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
+@media (orientation: portrait) {
+    #main-right{
+        display: none;
+        width: 0;
+    }
+    #main-left{
+        width: 100%;
+    }
+
+    #footer{
+        display:block;
+    }
+    #foot-left{
+        width: 100%;
+        text-align: center;
+    }
+    #foot-right{
+        width: 100%;
+        text-align: center;
+    }
+}
